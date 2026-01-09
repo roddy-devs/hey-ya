@@ -1,0 +1,204 @@
+.session-history {
+  padding: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.session-history h2 {
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.loading {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.no-sessions {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #666;
+}
+
+.sessions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.session-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.25rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.session-card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+  border-color: #667eea;
+}
+
+.session-date {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.75rem;
+}
+
+.session-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.session-stat {
+  text-align: center;
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.75rem;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.25rem;
+}
+
+.stat-value {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.active-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #2ecc71;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Session Detail */
+.session-detail {
+  padding: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.back-button {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.back-button:hover {
+  background: #5568d3;
+}
+
+.detail-header h2 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.detail-stats {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.detail-stat {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.detail-stat:last-child {
+  border-bottom: none;
+}
+
+.detail-stat .label {
+  font-weight: bold;
+  color: #666;
+}
+
+.detail-stat .value {
+  color: #333;
+}
+
+.holes-list h3 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.holes-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.holes-table thead {
+  background: #667eea;
+  color: white;
+}
+
+.holes-table th,
+.holes-table td {
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.holes-table tbody tr {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.holes-table tbody tr:hover {
+  background: #f8f9fa;
+}
+
+.holes-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .session-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .holes-table {
+    font-size: 0.85rem;
+  }
+
+  .holes-table th,
+  .holes-table td {
+    padding: 0.5rem 0.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .stat-value {
+    font-size: 1.2rem;
+  }
+}
