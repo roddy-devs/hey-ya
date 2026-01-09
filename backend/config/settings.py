@@ -152,3 +152,10 @@ CORS_ALLOW_CREDENTIALS = True
 
 # Static files
 STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+# CSRF Configuration for cross-origin requests
+CSRF_TRUSTED_ORIGINS = ['http://localhost:3000', 'http://127.0.0.1:3000']
+CSRF_COOKIE_SAMESITE = 'Lax'
+CSRF_COOKIE_HTTPONLY = False
+SESSION_COOKIE_SAMESITE = 'Lax'
+SESSION_COOKIE_HTTPONLY = True

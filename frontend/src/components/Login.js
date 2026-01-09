@@ -14,11 +14,7 @@ function Login({ onLogin }) {
     setLoading(true);
 
     try {
-      // First get CSRF token
-      await api.get('/api-auth/login/');
-      
-      // Then login
-      const response = await api.post('/api-auth/login/', {
+      const response = await api.post('/auth/login/', {
         username,
         password,
       });
@@ -27,6 +23,7 @@ function Login({ onLogin }) {
         onLogin();
       }
     } catch (err) {
+      console.error('Login error:', err);
       setError('Invalid username or password');
     } finally {
       setLoading(false);
