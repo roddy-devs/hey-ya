@@ -34,9 +34,6 @@ db.sqlite3-journal
 staticfiles/
 media/
 
-# Poetry
-poetry.lock
-
 # Virtual environments
 venv/
 ENV/
@@ -61,4 +58,3 @@ node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-package-lock.json
