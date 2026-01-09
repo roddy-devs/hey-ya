@@ -156,12 +156,13 @@ class SessionViewSet(viewsets.ModelViewSet):
         for hole_num in range(1, 11):
             hole_data = holes.filter(hole_number=hole_num)
             if hole_data.exists():
+                first_hole = hole_data.order_by('end_time').first()
                 hole_stats.append({
                     'hole_number': hole_num,
                     'average_completion_time': hole_data.aggregate(
-                        avg_time=Avg('end_time')
+                        avg_time=Avg('completion_time')
                     )['avg_time'],
-                    'fastest_completion': hole_data.order_by('end_time').first().completion_time,
+                    'fastest_completion': first_hole.completion_time if first_hole else None,
                 })
         
         stats['hole_stats'] = hole_stats

@@ -33,11 +33,11 @@ sleep 5
 
 # Run migrations
 echo "🔄 Running database migrations..."
-docker compose exec backend poetry run python manage.py migrate
+docker compose exec backend python manage.py migrate
 
 # Create superuser if needed (optional)
 echo "👤 Creating superuser (if needed)..."
-docker compose exec backend poetry run python manage.py shell -c "
+docker compose exec backend python manage.py shell -c "
 from django.contrib.auth.models import User
 if not User.objects.filter(username='admin').exists():
     User.objects.create_superuser('admin', 'admin@example.com', 'admin')
