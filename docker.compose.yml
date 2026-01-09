@@ -1,4 +1,0 @@
-Add a PostgreSQL service to docker-compose.
-- Use persistent volume
-- Expose DB to backend only
-- Configure via env vars

@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #1a1a1a;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-header {
+  background: #000000;
+  border-bottom: 4px solid #d4a017;
+  color: #d4a017;
+  padding: 1rem;
+  box-shadow: 0 4px 20px rgba(212, 160, 23, 0.3);
+}
+
+.App-header h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-shadow: 0 0 10px #d4a017, 0 0 20px #d4a017;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.App-header nav {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.App-header nav button {
+  padding: 0.5rem 1rem;
+  background: #2a2a2a;
+  color: #d4a017;
+  border: 2px solid #d4a017;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 700;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.App-header nav button:hover {
+  background: #d4a017;
+  color: #000000;
+  box-shadow: 0 0 15px #d4a017;
+}
+
+.App-header nav button.active {
+  background: #d4a017;
+  color: #000000;
+  border-color: #d4a017;
+  box-shadow: 0 0 20px #d4a017;
+}
+
+main {
+  flex: 1;
+  padding: 1rem;
+  background: #1a1a1a;
+}
+
+/* Mobile responsive */
+@media (min-width: 768px) {
+  .App-header h1 {
+    font-size: 2rem;
+  }
+
+  .App-header nav button {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+  }
+}
+
