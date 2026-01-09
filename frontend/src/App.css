@@ -10,7 +10,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #f5f5f5;
+  background: #1a1a1a;
 }
 
 .App {
@@ -20,16 +20,20 @@ body {
 }
 
 .App-header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: #000000;
+  border-bottom: 4px solid #d4a017;
+  color: #d4a017;
   padding: 1rem;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(212, 160, 23, 0.3);
 }
 
 .App-header h1 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   text-align: center;
+  text-shadow: 0 0 10px #d4a017, 0 0 20px #d4a017;
+  font-weight: 900;
+  letter-spacing: 2px;
 }
 
 .App-header nav {
@@ -41,29 +45,35 @@ body {
 
 .App-header nav button {
   padding: 0.5rem 1rem;
-  background: rgba(255, 255, 255, 0.2);
-  color: white;
-  border: 2px solid transparent;
+  background: #2a2a2a;
+  color: #d4a017;
+  border: 2px solid #d4a017;
   border-radius: 5px;
   cursor: pointer;
   font-size: 0.9rem;
-  font-weight: 600;
+  font-weight: 700;
   transition: all 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .App-header nav button:hover {
-  background: rgba(255, 255, 255, 0.3);
+  background: #d4a017;
+  color: #000000;
+  box-shadow: 0 0 15px #d4a017;
 }
 
 .App-header nav button.active {
-  background: white;
-  color: #667eea;
-  border-color: white;
+  background: #d4a017;
+  color: #000000;
+  border-color: #d4a017;
+  box-shadow: 0 0 20px #d4a017;
 }
 
 main {
   flex: 1;
   padding: 1rem;
+  background: #1a1a1a;
 }
 
 /* Mobile responsive */

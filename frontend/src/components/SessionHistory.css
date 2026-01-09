@@ -5,22 +5,23 @@
 }
 
 .session-history h2 {
-  color: #333;
+  color: #d4a017;
   margin-bottom: 1.5rem;
   text-align: center;
+  text-shadow: 0 0 10px #d4a017;
 }
 
 .loading {
   text-align: center;
   padding: 3rem;
   font-size: 1.2rem;
-  color: #666;
+  color: #d4a017;
 }
 
 .no-sessions {
   text-align: center;
   padding: 3rem 1rem;
-  color: #666;
+  color: #d4a017;
 }
 
 .sessions-list {
@@ -30,24 +31,25 @@
 }
 
 .session-card {
-  background: white;
-  border: 1px solid #ddd;
+  background: #000000;
+  border: 3px solid #d4a017;
   border-radius: 8px;
   padding: 1.25rem;
   cursor: pointer;
   transition: all 0.3s;
   position: relative;
+  box-shadow: 0 0 15px rgba(212, 160, 23, 0.3);
 }
 
 .session-card:hover {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 20px rgba(212, 160, 23, 0.5);
   transform: translateY(-2px);
-  border-color: #667eea;
+  border-color: #ffd700;
 }
 
 .session-date {
   font-size: 0.9rem;
-  color: #666;
+  color: #d4a017;
   margin-bottom: 0.75rem;
 }
 
@@ -64,7 +66,7 @@
 .stat-label {
   display: block;
   font-size: 0.75rem;
-  color: #999;
+  color: #d4a017;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   margin-bottom: 0.25rem;
@@ -74,20 +76,22 @@
   display: block;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #333;
+  color: #ff8c00;
+  text-shadow: 0 0 10px #ff8c00;
 }
 
 .active-badge {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  background: #2ecc71;
+  background: #2a9d4f;
   color: white;
   padding: 0.25rem 0.75rem;
   border-radius: 12px;
   font-size: 0.75rem;
   font-weight: bold;
   text-transform: uppercase;
+  box-shadow: 0 0 10px #2a9d4f;
 }
 
 /* Session Detail */
@@ -98,27 +102,31 @@
 }
 
 .back-button {
-  background: #667eea;
-  color: white;
-  border: none;
+  background: #d4a017;
+  color: #000000;
+  border: 2px solid #8b6f0f;
   padding: 0.5rem 1rem;
   border-radius: 5px;
   cursor: pointer;
   margin-bottom: 1.5rem;
   font-size: 0.9rem;
+  font-weight: bold;
 }
 
 .back-button:hover {
-  background: #5568d3;
+  background: #f0b92f;
+  box-shadow: 0 0 10px #d4a017;
 }
 
 .detail-header h2 {
-  color: #333;
+  color: #d4a017;
   margin-bottom: 1rem;
+  text-shadow: 0 0 10px #d4a017;
 }
 
 .detail-stats {
-  background: #f8f9fa;
+  background: #000000;
+  border: 2px solid #d4a017;
   border-radius: 8px;
   padding: 1.5rem;
   margin-bottom: 2rem;
@@ -128,7 +136,7 @@
   display: flex;
   justify-content: space-between;
   padding: 0.5rem 0;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #d4a017;
 }
 
 .detail-stat:last-child {
@@ -137,44 +145,52 @@
 
 .detail-stat .label {
   font-weight: bold;
-  color: #666;
+  color: #d4a017;
 }
 
 .detail-stat .value {
-  color: #333;
+  color: #ff8c00;
 }
 
 .holes-list h3 {
-  color: #333;
+  color: #d4a017;
   margin-bottom: 1rem;
+  text-shadow: 0 0 10px #d4a017;
 }
 
 .holes-table {
   width: 100%;
   border-collapse: collapse;
-  background: white;
+  background: #000000;
+  border: 2px solid #d4a017;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 15px rgba(212, 160, 23, 0.3);
 }
 
 .holes-table thead {
-  background: #667eea;
-  color: white;
+  background: #d4a017;
+  color: #000000;
 }
 
 .holes-table th,
 .holes-table td {
   padding: 0.75rem;
   text-align: center;
+  color: #ff8c00;
+}
+
+.holes-table thead th {
+  color: #000000;
+  font-weight: bold;
 }
 
 .holes-table tbody tr {
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #8b6f0f;
 }
 
 .holes-table tbody tr:hover {
-  background: #f8f9fa;
+  background: #1a1308;
 }
 
 .holes-table tbody tr:last-child {
